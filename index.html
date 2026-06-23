@@ -331,6 +331,41 @@ border-radius:12px;">
 `;
 
 }
+     function afficherQRCode() {
+
+document.body.innerHTML = `
+
+<div style="background:#0b3b63;color:white;padding:20px;min-height:100vh;text-align:center;font-family:Arial">
+
+<h1>⬛ MON QR CODE</h1>
+
+<p>
+Scannez ce QR Code pour accéder rapidement à vos informations.
+</p>
+
+<img
+src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https://chessyca.github.io/Fiche-securite-rcy/"
+style="background:white;padding:15px;border-radius:15px;">
+
+<br><br>
+
+<button onclick="location.reload()"
+style="
+width:100%;
+padding:20px;
+background:#666;
+color:white;
+font-size:20px;
+border:none;
+border-radius:12px;">
+← Retour à l'accueil
+</button>
+
+</div>
+
+`;
+
+}
  </script>   
 </body>
 </html>
