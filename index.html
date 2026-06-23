@@ -273,12 +273,11 @@ ${localStorage.getItem("licence") || ""}
 ${localStorage.getItem("contact1") || ""}
 </p>
 
-<p style="font-size:36px;color:red;font-weight:bold;">
+<p style="font-size:36px;font-weight:bold;">
+<a href="tel:${localStorage.getItem("tel1") || ""}"
+   style="color:red;text-decoration:none;">
 ${localStorage.getItem("tel1") || ""}
-</p>
-
-<p style="font-size:36px;color:red;font-weight:bold;">
-${localStorage.getItem("tel1") || ""}
+</a>
 </p>
 
 <hr>
