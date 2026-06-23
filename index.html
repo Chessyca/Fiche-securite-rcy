@@ -83,7 +83,7 @@ Vos informations essentielles toujours à portée de main
 🚨 URGENCE
 </a>
 
-<a href="#" class="btn fiche">
+<a href="#" class="btn fiche" onclick="afficherFiche()">
 👤 MA FICHE
 </a>
 
@@ -121,6 +121,75 @@ Rando Club Yerrois
 </button>
 
 </div>
-    
+ <script>
+
+function afficherFiche() {
+
+document.body.innerHTML = `
+
+<div style="background:#0b3b63;color:white;padding:20px;min-height:100vh;font-family:Arial">
+
+<h1>👤 MA FICHE</h1>
+
+<p>
+Nom
+</p>
+<input style="width:100%;padding:10px;" type="text">
+
+<p>
+Prénom
+</p>
+<input style="width:100%;padding:10px;" type="text">
+
+<p>
+Date de naissance
+</p>
+<input style="width:100%;padding:10px;" type="text">
+
+<p>
+N° licence
+</p>
+<input style="width:100%;padding:10px;" type="text">
+
+<p>
+Contact urgence 1
+</p>
+<input style="width:100%;padding:10px;" type="text">
+
+<p>
+Téléphone urgence 1
+</p>
+<input style="width:100%;padding:10px;" type="text">
+
+<p>
+Allergies
+</p>
+<textarea style="width:100%;padding:10px;"></textarea>
+
+<p>
+Traitements
+</p>
+<textarea style="width:100%;padding:10px;"></textarea>
+
+<br><br>
+
+<button style="
+width:100%;
+padding:20px;
+background:#2a9d8f;
+color:white;
+font-size:20px;
+border:none;
+border-radius:12px;">
+💾 ENREGISTRER
+</button>
+
+</div>
+
+`;
+
+}
+
+</script>   
 </body>
 </html>
