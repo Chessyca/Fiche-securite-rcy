@@ -202,7 +202,20 @@ border-radius:12px;">
 `;
 
 }
+function sauvegarderFiche() {
 
+localStorage.setItem("nom", document.getElementById("nom").value);
+localStorage.setItem("prenom", document.getElementById("prenom").value);
+localStorage.setItem("naissance", document.getElementById("naissance").value);
+localStorage.setItem("licence", document.getElementById("licence").value);
+localStorage.setItem("contact1", document.getElementById("contact1").value);
+localStorage.setItem("tel1", document.getElementById("tel1").value);
+localStorage.setItem("allergies", document.getElementById("allergies").value);
+localStorage.setItem("traitements", document.getElementById("traitements").value);
+
+alert("Fiche enregistrée avec succès");
+
+}
 </script>   
 </body>
 </html>
