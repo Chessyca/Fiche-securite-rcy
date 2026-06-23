@@ -200,7 +200,33 @@ border-radius:12px;">
 </div>
 
 `;
+`;
+    
+document.getElementById("nom").value =
+localStorage.getItem("nom") || "";
 
+document.getElementById("prenom").value =
+localStorage.getItem("prenom") || "";
+
+document.getElementById("naissance").value =
+localStorage.getItem("naissance") || "";
+
+document.getElementById("licence").value =
+localStorage.getItem("licence") || "";
+
+document.getElementById("contact1").value =
+localStorage.getItem("contact1") || "";
+
+document.getElementById("tel1").value =
+localStorage.getItem("tel1") || "";
+
+document.getElementById("allergies").value =
+localStorage.getItem("allergies") || "";
+
+document.getElementById("traitements").value =
+localStorage.getItem("traitements") || "";
+
+}
 }
 function sauvegarderFiche() {
 
