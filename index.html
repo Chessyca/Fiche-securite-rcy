@@ -240,6 +240,76 @@ localStorage.setItem("traitements", document.getElementById("traitements").value
 alert("Fiche enregistrée avec succès");
 
 }
-</script>   
+function afficherUrgence() {
+
+document.body.innerHTML = `
+
+<div style="background:white;color:black;padding:20px;min-height:100vh;font-family:Arial">
+
+<h1 style="
+background:#d62828;
+color:white;
+padding:20px;
+text-align:center;
+border-radius:12px;">
+🚨 FICHE D'URGENCE
+</h1>
+
+<h2>${localStorage.getItem("nom") || ""} ${localStorage.getItem("prenom") || ""}</h2>
+
+<p><strong>Date de naissance :</strong><br>
+${localStorage.getItem("naissance") || ""}
+</p>
+
+<p><strong>N° licence :</strong><br>
+${localStorage.getItem("licence") || ""}
+</p>
+
+<hr>
+
+<h2>📞 Contact d'urgence</h2>
+
+<p style="font-size:28px;font-weight:bold;">
+${localStorage.getItem("contact1") || ""}
+</p>
+
+<p style="font-size:36px;color:red;font-weight:bold;">
+${localStorage.getItem("tel1") || ""}
+</p>
+
+<hr>
+
+<h2>⚠️ Allergies</h2>
+
+<p style="font-size:24px;color:red;">
+${localStorage.getItem("allergies") || "Aucune"}
+</p>
+
+<h2>💊 Traitements</h2>
+
+<p style="font-size:24px;">
+${localStorage.getItem("traitements") || "Aucun"}
+</p>
+
+<br><br>
+
+<button onclick="location.reload()"
+style="
+width:100%;
+padding:20px;
+background:#666;
+color:white;
+font-size:20px;
+border:none;
+border-radius:12px;">
+← Retour à l'accueil
+</button>
+
+</div>
+
+`;
+
+}
+ </script>   
 </body>
 </html>
