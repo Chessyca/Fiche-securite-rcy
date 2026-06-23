@@ -4,39 +4,98 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fiche Sécurité RCY</title>
+
 <style>
 body{
-font-family:Arial,sans-serif;
-text-align:center;
-background:#0b3b63;
-color:white;
-padding:30px;
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#0b3b63;
+    color:white;
+    text-align:center;
 }
-.button{
-display:block;
-background:white;
-color:#0b3b63;
-padding:20px;
-margin:15px auto;
-max-width:300px;
-border-radius:12px;
-text-decoration:none;
-font-size:22px;
-font-weight:bold;
+
+header{
+    padding:30px 20px;
+}
+
+h1{
+    margin-bottom:10px;
+}
+
+.slogan{
+    font-size:18px;
+    opacity:0.9;
+}
+
+.container{
+    max-width:500px;
+    margin:auto;
+    padding:20px;
+}
+
+.btn{
+    display:block;
+    text-decoration:none;
+    padding:22px;
+    margin:15px 0;
+    border-radius:15px;
+    font-size:24px;
+    font-weight:bold;
+    color:white;
+}
+
+.urgence{
+    background:#d62828;
+}
+
+.fiche{
+    background:#2a9d8f;
+}
+
+.qrcode{
+    background:#457b9d;
+}
+
+footer{
+    margin-top:40px;
+    font-size:14px;
+    opacity:0.8;
 }
 </style>
+
 </head>
+
 <body>
+
+<header>
 
 <h1>🥾 Fiche Sécurité RCY</h1>
 
-<p>Vos informations essentielles toujours à portée de main</p>
+<div class="slogan">
+Vos informations essentielles toujours à portée de main
+</div>
 
-<a class="button" href="#">🚨 URGENCE</a>
+</header>
 
-<a class="button" href="#">👤 MA FICHE</a>
+<div class="container">
 
-<a class="button" href="#">🔳 MON QR CODE</a>
+<a href="#" class="btn urgence">
+🚨 URGENCE
+</a>
+
+<a href="#" class="btn fiche">
+👤 MA FICHE
+</a>
+
+<a href="#" class="btn qrcode">
+🔳 MON QR CODE
+</a>
+
+</div>
+
+<footer>
+Rando Club Yerrois
+</footer>
 
 </body>
 </html>
