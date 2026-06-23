@@ -338,6 +338,9 @@ document.body.innerHTML = `
 <div style="background:#0b3b63;color:white;padding:20px;min-height:100vh;text-align:center;font-family:Arial">
 
 <h1>⬛ MON QR CODE</h1>
+<h2>
+${localStorage.getItem("nom") || ""} ${localStorage.getItem("prenom") || ""}
+</h2>
 
 <p>
 Scannez ce QR Code pour accéder rapidement à vos informations.
